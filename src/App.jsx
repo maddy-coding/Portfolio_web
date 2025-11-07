@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+    <nav class="fixed top-0 left-0 w-full bg-white/80 z-50">
   <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
     
     <a href="#home" class="text-2xl font-bold text-blue-600">HD</a>
@@ -16,6 +16,9 @@ function App() {
     <ul class="flex space-x-8 text-gray-700 font-medium">
       <li>
         <a href="#projects" class="hover:text-blue-600 transition-colors">Projects</a>
+      </li>
+      <li>
+        <a href="#casestudies" class="hover:text-blue-600 transition-colors">Case Studies</a>
       </li>
       <li>
         <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
@@ -28,12 +31,54 @@ function App() {
 </nav>
 
       <div className="bg-gray-50 text-gray-800 scroll-smooth">
+
+          <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center bg-white">
+      <div className="max-w-3xl">
+        {/* Profile Image */}
+        <div className="mb-6">
+          <img
+            src="/profile.jpg" // replace with your image
+            alt="Hammad Riaz"
+            className="w-24 h-24 rounded-full mx-auto object-cover shadow-md"
+          />
+        </div>
+
+        {/* Intro Text */}
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Hi, <span className="text-black">Sar Nechy Kaam Uper</span>
+        </h1>
+        <h2 className="text-2xl md:text-3xl font-semibold text-gray-400 mb-4">
+          I’m a <span className="text-black">UI/UX Designer</span> at{" "}
+          <span className="text-red-500">Logicode Technologies</span>
+        </h2>
+
+        {/* Status and CTA */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-6">
+          <span className="flex items-center gap-2 border border-gray-200 px-4 py-2 rounded-full text-gray-700 text-sm">
+            <span className="w-2.5 h-2.5 bg-green-500 rounded-full"></span>
+            Open to work
+          </span>
+
+          <a
+            href="#contact"
+            className="bg-black text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-900 transition"
+          >
+            Book a call
+          </a>
+        </div>
+
+        {/* Subtext */}
+        <p className="text-gray-600 mt-8 text-base md:text-lg">
+          Feel free to explore my portfolio and reach out — I’d love to connect!
+        </p>
+      </div>
+    </section>
       {/* Hero Section */}
-      <section
+      {/* <section
         id="home"
         className="min-h-screen flex flex-col items-center justify-center text-center px-6"
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Hammad Riaz</h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Sar Nechy Kaam Uper</h1>
         <p className="text-lg md:text-xl mb-6 text-gray-600">
           UX Designer | Creating human-centered interfaces & delightful digital
           stories
@@ -52,7 +97,7 @@ function App() {
             Get in Touch
           </a>
         </div>
-      </section>
+      </section> */}
 
       {/* About Section */}
       <section id="about" className="max-w-4xl mx-auto py-20 px-6">
